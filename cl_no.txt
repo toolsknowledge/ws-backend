@@ -1,0 +1,348 @@
+
+
+
+
+
+1) create the account with AWS.
+
+    URL : https://aws.amazon.com/
+
+
+2) deploy the images to s3 bucket
+
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p1.jpg
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p2.jpg
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p3.jpg
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p4.jpg
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p5.jpg
+
+    https://ashokitworkshop.s3.ap-south-1.amazonaws.com/p6.jpg
+
+
+3) save the above images path in mongodb database
+
+       => MongoDB database is NoSQL database.
+
+       => MongoDB database support JSON.
+
+       => MongoDB database is the light weight database.
+
+       => MongoDB Atlas support cloud environment.
+
+       => Default port number of MongoDB database is "27017"
+
+
+        SQL                                     NoSQL
+
+1) Oracle,MySQL,SQLServer                   MongoDB,CassandraDB,.....
+
+
+2) SQL & PLSQL Languages                    won't support
+
+
+3) databases                                databases
+
+
+4) tables                                   collections
+
+
+5) primary key                              _id
+
+
+        create the mongodb atlas account
+        --------------------------------
+
+        URL : https://account.mongodb.com/account/login
+
+
+        *********************************************************************************************************************************************
+        database name       :       ashokit_ws
+
+        collection name     :       products
+
+        user name           :       admin
+
+        password            :       admin
+
+        URL                 :       mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/ashokit_ws?retryWrites=true&w=majority
+
+        **********************************************************************************************************************************************
+
+                                        ***** Node Server Implementation *****
+
+
+        - NodeJS is the "backend" technology.
+
+        - NodeJS used to develop the "servers".
+
+                Http Server
+
+                TCP Server
+
+        - we will develop NodeJS Applications with the help of "JavaScript".
+
+        - NodeJS Supports libraries/modules.
+
+1) express
+
+    express used to develop the rest services.
+
+    Ex.
+            GET
+            POST
+            PUT
+            DELETE
+            ---
+            ---
+            ---
+
+
+2) mongodb
+
+    used to connect to "mongodb" database.
+
+
+3) cors
+
+    used to enable the cors policy
+
+4) body-parser
+
+    used to read the data from client application
+
+    
+        - we will download above libraries with the help of "yarn" tool / "npm" tool.
+
+
+
+=> create the directory
+
+    Ex.
+        server
+
+=> switch to server directory
+
+    > cd server
+
+=> download the libraries
+
+    > yarn add mongodb express cors body-parser --save
+
+    above libraries downloads to "node_modules" folder in current path
+
+
+
+=> develop the server
+
+    Ex.
+            server.js
+
+
+=> start the server
+
+        > node server
+
+=> test the end point with Postman.
+
+        http://localhost:8080/products     (GET)
+
+
+
+                                    ******  Angular12 Implementation *****
+
+
+1) create the angular application
+
+        > ng new ecommerceApp
+
+2) switch to angular application
+
+        > cd ecommerceApp
+
+3) Implement the angular application
+
+
+        => create the service
+
+        ********************************************
+        ecommerceApp
+                   src
+                     app
+                       ecommerce.service.ts
+        ********************************************
+
+        => finally   "ecommerceService" is ready with "getProducts()" function.
+
+
+4) create the component
+
+    **********************************************
+    ecommerceApp
+               src
+                 app
+                   ecommerce.component.ts
+                   ecommerce.component.html
+    ***********************************************
+
+
+
+AWS Deployment
+--------------
+
+we have two layers 
+
+1) backend
+
+2) frontend
+
+
+backend deployment    (nodejs)
+------------------------------
+
+1) create the GitHub Repository
+
+        => ws-backend
+
+
+2) create the application in aws
+
+    => Elastic Beanstalk
+
+
+3) Implement the CI/CD Process 
+
+    => CodePipeline
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
